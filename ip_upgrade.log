@@ -1,0 +1,16 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Dec 21 11:57:32 2017
+| Host         : pc-b043a-10 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_12MHz'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_12MHz (xilinx.com:ip:clk_wiz:5.4 (Rev. 1)) to Vivado generation flows.
+

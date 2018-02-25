@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="audio_interface_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="audio_interface_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3515000000fs"></ZoomStartTime>
+      <ZoomEndTime time="4165000001fs"></ZoomEndTime>
+      <Cursor1Time time="184467500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="189"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/audio_interface_tb/clk_12megas" type="logic">
+      <obj_property name="ElementShortName">clk_12megas</obj_property>
+      <obj_property name="ObjectShortName">clk_12megas</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/micro_clk" type="logic">
+      <obj_property name="ElementShortName">micro_clk</obj_property>
+      <obj_property name="ObjectShortName">micro_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/en_2_cycles" type="logic">
+      <obj_property name="ElementShortName">en_2_cycles</obj_property>
+      <obj_property name="ObjectShortName">en_2_cycles</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/en_4_cycles1" type="logic">
+      <obj_property name="ElementShortName">en_4_cycles1</obj_property>
+      <obj_property name="ObjectShortName">en_4_cycles1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/micro_data" type="logic">
+      <obj_property name="ElementShortName">micro_data</obj_property>
+      <obj_property name="ObjectShortName">micro_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/FSMD/count_aux" type="other">
+      <obj_property name="ElementShortName">count_aux</obj_property>
+      <obj_property name="ObjectShortName">count_aux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/FSMD/dato1" type="array">
+      <obj_property name="ElementShortName">dato1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/FSMD/dato2" type="array">
+      <obj_property name="ElementShortName">dato2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/FSMD/fin_ciclo" type="logic">
+      <obj_property name="ElementShortName">fin_ciclo</obj_property>
+      <obj_property name="ObjectShortName">fin_ciclo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/sample_out" type="array">
+      <obj_property name="ElementShortName">sample_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/sample_out_ready" type="logic">
+      <obj_property name="ElementShortName">sample_out_ready</obj_property>
+      <obj_property name="ObjectShortName">sample_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/record_enable" type="logic">
+      <obj_property name="ElementShortName">record_enable</obj_property>
+      <obj_property name="ObjectShortName">record_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/play_enable" type="logic">
+      <obj_property name="ElementShortName">play_enable</obj_property>
+      <obj_property name="ObjectShortName">play_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/PWM_P/count_aux" type="other">
+      <obj_property name="ElementShortName">count_aux</obj_property>
+      <obj_property name="ObjectShortName">count_aux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/sample_request" type="logic">
+      <obj_property name="ElementShortName">sample_request</obj_property>
+      <obj_property name="ObjectShortName">sample_request</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/AUD_INT/pwm_pulse" type="logic">
+      <obj_property name="ElementShortName">pwm_pulse</obj_property>
+      <obj_property name="ObjectShortName">pwm_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/jack_pwm" type="logic">
+      <obj_property name="ElementShortName">jack_pwm</obj_property>
+      <obj_property name="ObjectShortName">jack_pwm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/micro_LR" type="logic">
+      <obj_property name="ElementShortName">micro_LR</obj_property>
+      <obj_property name="ObjectShortName">micro_LR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/jack_sd" type="logic">
+      <obj_property name="ElementShortName">jack_sd</obj_property>
+      <obj_property name="ObjectShortName">jack_sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/a" type="logic">
+      <obj_property name="ElementShortName">a</obj_property>
+      <obj_property name="ObjectShortName">a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/b" type="logic">
+      <obj_property name="ElementShortName">b</obj_property>
+      <obj_property name="ObjectShortName">b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/c" type="logic">
+      <obj_property name="ElementShortName">c</obj_property>
+      <obj_property name="ObjectShortName">c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/d" type="array">
+      <obj_property name="ElementShortName">d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/e" type="array">
+      <obj_property name="ElementShortName">e[7:0]</obj_property>
+      <obj_property name="ObjectShortName">e[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/f" type="array">
+      <obj_property name="ElementShortName">f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/audio_interface_tb/c_period" type="other">
+      <obj_property name="ElementShortName">c_period</obj_property>
+      <obj_property name="ObjectShortName">c_period</obj_property>
+   </wvobject>
+</wave_config>

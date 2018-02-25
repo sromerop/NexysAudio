@@ -1,0 +1,362 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 22 13:31:39 2017
+# Process ID: 5216
+# Current directory: E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1
+# Command line: vivado.exe -log controlador.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source controlador.tcl
+# Log file: E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/controlador.vds
+# Journal file: E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source controlador.tcl -notrace
+Command: synth_design -top controlador -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5276 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 334.797 ; gain = 74.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controlador' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/controlador.vhd:44]
+INFO: [Synth 8-3491] module 'clk_12MHz' declared at 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/realtime/clk_12MHz_stub.vhdl:5' bound to instance 'CLK_12' of component 'clk_12MHz' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/controlador.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'clk_12MHz' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/realtime/clk_12MHz_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'audio_interface' declared at 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:34' bound to instance 'AUD_INT' of component 'audio_interface' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/controlador.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'audio_interface' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:50]
+INFO: [Synth 8-3491] module 'pwm' declared at 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/pwm.vhd:32' bound to instance 'PWM_P' of component 'pwm' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'pwm' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/pwm.vhd:42]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/pwm.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (1#1) [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/pwm.vhd:42]
+INFO: [Synth 8-3491] module 'en_4_cycles' declared at 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/en_4_cycles.vhd:34' bound to instance 'EN_4' of component 'en_4_cycles' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'en_4_cycles' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/en_4_cycles.vhd:42]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/en_4_cycles.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'en_4_cycles' (2#1) [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/en_4_cycles.vhd:42]
+INFO: [Synth 8-3491] module 'FSMD_microphone' declared at 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:32' bound to instance 'FSMD' of component 'FSMD_microphone' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'FSMD_microphone' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:41]
+WARNING: [Synth 8-614] signal 'dato1' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:76]
+WARNING: [Synth 8-614] signal 'dato2' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:76]
+WARNING: [Synth 8-614] signal 'fin_ciclo' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:76]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'FSMD_microphone' (3#1) [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'audio_interface' (4#1) [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/audio_interface.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'controlador' (5#1) [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/controlador.vhd:44]
+WARNING: [Synth 8-3331] design FSMD_microphone has unconnected port clk_12megas
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 375.121 ; gain = 115.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 375.121 ; gain = 115.230
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/dcp3/clk_12MHz_in_context.xdc] for cell 'CLK_12'
+Finished Parsing XDC File [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/dcp3/clk_12MHz_in_context.xdc] for cell 'CLK_12'
+Parsing XDC File [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/constrs_1/imports/DSED_Grupo6/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/constrs_1/imports/DSED_Grupo6/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/constrs_1/imports/DSED_Grupo6/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/controlador_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/controlador_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 687.391 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:41 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:41 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/dcp3/clk_12MHz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/.Xil/Vivado-5216-pc-b043a-20/dcp3/clk_12MHz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for CLK_12. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:41 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "en_4_cycles_aux" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dato1_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fin_ciclo" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'sample_out_aux_reg' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'fin_ciclo_reg' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'dato1_next_reg' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'dato2_next_reg' [E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sources_1/new/FSMD_microphone.vhd:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:42 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module en_4_cycles 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module FSMD_microphone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "AUD_INT/FSMD/dato1_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design controlador has port micro_LR driven by constant 1
+WARNING: [Synth 8-3917] design controlador has port jack_sd driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:46 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK_12/clk_out1' to pin 'CLK_12/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:57 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:57 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:57 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_12MHz     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_12MHz_bbox |     1|
+|2     |CARRY4         |     2|
+|3     |LUT1           |     4|
+|4     |LUT2           |    14|
+|5     |LUT3           |    19|
+|6     |LUT4           |    21|
+|7     |LUT5           |    14|
+|8     |LUT6           |    49|
+|9     |FDCE           |    42|
+|10    |LD             |    27|
+|11    |IBUF           |     2|
+|12    |OBUF           |     4|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                |   199|
+|2     |  AUD_INT |audio_interface |   192|
+|3     |    EN_4  |en_4_cycles     |     9|
+|4     |    FSMD  |FSMD_microphone |   150|
+|5     |    PWM_P |pwm             |    33|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 687.391 ; gain = 115.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 687.391 ; gain = 427.500
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  LD => LDCE: 27 instances
+
+33 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:01:10 . Memory (MB): peak = 687.391 ; gain = 435.863
+INFO: [Common 17-1381] The checkpoint 'E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.runs/synth_1/controlador.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 687.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 22 13:33:00 2017...

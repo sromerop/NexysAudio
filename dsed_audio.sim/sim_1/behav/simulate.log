@@ -1,0 +1,5 @@
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+Failure: Simulation Finished
+Time: 9558487500 ps  Iteration: 1  Process: /fir_filter_tb_avanzado/line__103  File: E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sim_1/new/fir_filter_tb_avanzado.vhd
+$finish called at time : 9558487500 ps : File "E:/DSED_Grupo6/Proyecto/dsed_audio/dsed_audio.srcs/sim_1/new/fir_filter_tb_avanzado.vhd" Line 129

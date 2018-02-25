@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_12MHz_synth_1" LaunchDir="C:/Users/fpga/Downloads/dsed_audio-20171221T102638Z-001/dsed_audio/dsed_audio.runs/clk_12MHz_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/fpga/Downloads/dsed_audio-20171221T102638Z-001/dsed_audio/dsed_audio.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_12MHz_synth_1"/>
+	</Run>
+</Runs>
+

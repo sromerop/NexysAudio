@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec 21 11:58:04 2017
+# Process ID: 2396
+# Current directory: C:/Users/fpga/Downloads/dsed_audio-20171221T102638Z-001/dsed_audio/dsed_audio.runs/clk_12MHz_synth_1
+# Command line: vivado.exe -log clk_12MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_12MHz.tcl
+# Log file: C:/Users/fpga/Downloads/dsed_audio-20171221T102638Z-001/dsed_audio/dsed_audio.runs/clk_12MHz_synth_1/clk_12MHz.vds
+# Journal file: C:/Users/fpga/Downloads/dsed_audio-20171221T102638Z-001/dsed_audio/dsed_audio.runs/clk_12MHz_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_12MHz.tcl -notrace
